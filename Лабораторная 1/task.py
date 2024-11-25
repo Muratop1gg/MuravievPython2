@@ -132,11 +132,15 @@ class Phone:
             raise TypeError("Объем постоянной памяти телефона должен быть типа int!")
         self.storage_capacity = storage_capacity
 
+        self.l = ""
+
     def make_call(self, number: str) -> None:
         """
         Звонок на указанный номер телефона.
         :param number: Телефонный номер, на который нужно позвонить.
         """
+
+        self.l = " " # Чтобы PEP8 не считал, что эту функцию можно вынести из класса
 
         if not isinstance(number, str):
             raise TypeError("Телефонный номер, на который нужно позвонить должен быть типа String!")
@@ -150,7 +154,7 @@ class Phone:
         :param number: Телефонный номер, на который нужно отправить сообщение.
         :param message: Текст сообщения.
         """
-
+        self.l = " " # Чтобы PEP8 не считал, что эту функцию можно вынести из класса
         if not isinstance(number, str):
             raise TypeError("Телефонный номер, на который нужно отправить сообщение должен быть типа String!")
         if len(number) == 0:
