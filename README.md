@@ -14,7 +14,7 @@
 
 ## Как я легко правил код для проверки:
 
-Создал репозиторий на [github codespaces](https://github.com/codespaces)
+Создал рабочее пространство на [github codespaces](https://github.com/codespaces)
 
 Установил пакет `black`
 
