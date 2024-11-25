@@ -14,7 +14,7 @@
 
 ## Как я легко правил код для проверки:
 
-Создал рабочее пространство на [github codespaces](https://github.com/codespaces)
+Создал рабочее пространство на [github codespaces](https://github.com/codespaces) и выбрал `Empty Template`
 
 Установил пакет `black`
 
