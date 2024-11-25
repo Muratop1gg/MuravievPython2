@@ -108,7 +108,7 @@ class Phone:
         """
         Создание и подготовка к работе объекта "Телефон".
 
-        :param brand: Название фирмы, изготовившей телефон.
+        :param brand: Название фирмы, изготовившей телефон.black --check -l120 --skip-string-normalization
         :param model: Название модели телефона.
         :param storage_capacity: Объем постоянной памяти телефона.
 
@@ -117,9 +117,7 @@ class Phone:
         """
 
         if not isinstance(brand, str):
-            raise TypeError(
-                "Название фирмы, изготовившей телефон должно быть типа String!"
-            )
+            raise TypeError("Название фирмы, изготовившей телефон должно быть типа String!")
         if len(brand) == 0:
             raise ValueError("У фирмы, изготовившей телефон должно быть название!")
         self.brand = brand
@@ -145,9 +143,7 @@ class Phone:
         self.l = " "  # Чтобы PEP8 не считал, что эту функцию можно вынести из класса
 
         if not isinstance(number, str):
-            raise TypeError(
-                "Телефонный номер, на который нужно позвонить должен быть типа String!"
-            )
+            raise TypeError("Телефонный номер, на который нужно позвонить должен быть типа String!")
         if len(number) == 0:
             raise ValueError("Длина номера телефона должна быть больше нуля!")
         pass
@@ -160,16 +156,12 @@ class Phone:
         """
         self.l = " "  # Чтобы PEP8 не считал, что эту функцию можно вынести из класса
         if not isinstance(number, str):
-            raise TypeError(
-                "Телефонный номер, на который нужно отправить сообщение должен быть типа String!"
-            )
+            raise TypeError("Телефонный номер, на который нужно отправить сообщение должен быть типа String!")
         if len(number) == 0:
             raise ValueError("Длина номера телефона должна быть больше нуля!")
 
         if not isinstance(message, str):
-            raise TypeError(
-                "Текст сообщения, которое нужно отправить должен быть типа String!"
-            )
+            raise TypeError("Текст сообщения, которое нужно отправить должен быть типа String!")
         if len(message) == 0:
             raise ValueError("Длина номера телефона должна быть больше нуля!")
 
